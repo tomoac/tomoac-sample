@@ -1,11 +1,10 @@
 <?xml version="1.0"?>
 <schema version="0.3">
-	<table name="btTomoacButton">
+	<table name="btTomoacSample">
 		<field name="bID" type="I">
 			<key />
 			<unsigned />
 		</field>
-		<field name="contents" type="X" />
-		<field name="options" type="X" />
+		<field name="data" type="X" />
 	</table>
 </schema>

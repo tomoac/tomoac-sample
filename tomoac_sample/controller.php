@@ -1,25 +1,25 @@
 <?php
 defined('C5_EXECUTE') or die(_("Access Denied."));
 
-class TomoacButtonPackage extends Package {
+class TomoacSamplePackage extends Package {
 
-     protected $pkgHandle = 'tomoac_button';
+     protected $pkgHandle = 'tomoac_sample';
      protected $appVersionRequired = '5.4.0';
      protected $pkgVersion = '0.1.0';
 
      public function getPackageDescription() {
-          return t('Tomoac Sample');
+          return t('Sample by tomoac');
      }
 
      public function getPackageName() {
-          return t('Sample by tomoac');
+          return t('Tomoac sample');
      }
 
      public function install() {
           $pkg = parent::install();
 
           // install block 
-          BlockType::installBlockTypeFromPackage('tomoac_button', $pkg); 
+          BlockType::installBlockTypeFromPackage('tomoac_sample', $pkg); 
      }
 }
 ?>
